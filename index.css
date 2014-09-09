@@ -1,0 +1,431 @@
+/********* Bootstrap ************/
+body{
+	font-family: Helvetica Neue UltraLight, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  	padding-bottom: 65px;
+  	padding-top: 15px;
+  	color:black;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 1px;
+}
+p{
+	margin:0px;
+}
+
+.navbar-header {
+	background-color: #E04E5F;
+}
+
+.navbar .navbar-brand{
+	color:  #f7f6f5;
+	/*height: 55px;*/
+	font-size: 35px;
+	padding: 15px;
+}
+#nav_label{
+	font-size:20px;
+	margin-left: 20px;
+}
+.navbar .navbar-toggle .icon-bar {
+	background-color:  #f7f6f5;
+}
+.navbar-toggle{
+	float:left;
+	margin-left:10px;
+}
+
+#nav_label:hover {
+	color: #f7f6f5;
+}
+.filler{
+	padding-top:5%;
+}
+.filler2{
+	padding-top:20%;
+}
+a{
+	color:inherit;
+	cursor: pointer;
+}
+a:visited{
+	color:inherit;
+}
+a:hover{
+	text-decoration: none;
+	color:#77C4D3;
+}
+a:active{
+	text-decoration: none;
+	color: #333745;
+}
+/*//////////////////////////////////*/
+
+.mainFrame{
+	width:100%;
+	height:485px;
+}
+.table_nav{
+	width:100%;
+	/*background-color: #919191;*/
+	height:60px;
+	/*opacity: .3;*/
+}
+.table_nav td{
+	width: 20%;
+	/*padding-top: 2%;*/
+}
+.img_nav{
+	width:45px;
+	height:40px;
+	margin-left: 7px;
+	/*padding:2%;*/
+
+}
+.p_navLabel{
+	text-align: center;
+	margin:0px;
+	margin-bottom:2px;
+	font-size: 10px;
+
+}
+
+/*////////////// index ///////////////*/
+.img_test2{
+	position:relative;
+}
+.img_test{
+	position:absolute;
+
+}
+
+/*///////////// purchased //////////////////*/
+.pageName{
+	text-align: center;
+}
+#div_search{
+	height:8%;
+	background-color: #384759;
+	padding-bottom: 5px;
+}
+#p_search{
+	margin-left:3%;
+	height:30%;
+	font-size: 90%;
+}
+#input_search{
+	height:25px;
+	border-radius: 5px;
+	text-align: center;
+	margin-left: 5%;
+	width: 90%;
+	box-shadow: none;
+	border:0px;
+	margin-top:10px;
+	font-size: 15px;
+}
+#ol_purchase{
+	list-style-type: none;
+	width:100%;
+	height:100%;
+	overflow: scroll;
+	padding:0px;
+}
+.li_element{
+	height: 15%;
+}
+/*#ol_purchase li:nth-child(even){
+	background-color: gray;
+}*/
+.img_purchaseItem{
+	width:22%;
+	height:85%;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 2%;
+	margin-left:2%;
+}
+.div_itemInfo{
+	width:55%;
+	height:80%;
+	display: inline-block;
+	margin-top: 2%;
+}
+.p_itemName{
+	margin-left: 5px;
+	height:30%;
+	width:90%;
+	font-size: 15px;
+	color:#1C75BC;
+	opacity: .8;
+/*	overflow-x:scroll;
+	overflow-y:hidden;*/
+}
+.p_vendor{
+	font-size:11px;
+}
+.p_itemRule{
+	font-size: 13px;
+	color:#919191;
+	opacity: .7;
+}
+.p_itemPrice{
+	color:#1C75BC;
+	opacity: .8;
+	font-size: 15px;
+}
+.p_itemChance{
+	color:red;
+	opacity: .9;
+}
+#input_playButton{
+	background-color: red;
+	vertical-align: top;
+	margin-top: 8%;
+	color:white;
+	box-shadow: none;
+	border-radius: 2px;
+	border:0px;
+	width:18%;
+	/*width:10%;*/
+}
+
+
+ /*/////////////  game ///////////////*/
+#div_round{
+	display:none;
+	width:40%;
+	height:10%;
+	margin-left: 25%;
+	background-color: red;
+	color:white;
+	position: absolute;
+	font-size: 140%;
+	text-align: center;
+	z-index: 10;
+}
+#p_winner{
+	display:none;
+	width:60%;
+	height:40%;
+	margin-left: 15%;
+	margin-top:15%;
+	background-color: white;
+	color:green;
+	border:solid 1px black;
+	border-radius: 4px;
+	position: absolute;
+	font-size: 140%;
+	text-align: center;
+	padding-top: 30%;
+	z-index: 20;
+}
+#img_topflag{
+	height:150px;
+	width: 330px;
+	position: absolute;
+	z-index: -10;
+	margin-left: -30px;
+	margin-top: -20px;
+}
+#div_gameTop{
+	height:25%;
+	background-color: none;
+}
+
+#div_nowPlayingFor{
+	height:50%;
+	background-color: none;
+}
+#p_playingFor{
+	display: block;
+	text-align: center;
+	background-color: none;
+}
+#p_timeleft{
+	display: block;
+	text-align: center;
+	background-color: none;
+	color: red;
+}
+
+#div_gameItem{
+	height:70%;
+}
+#img_gameItem{
+	width:25%;
+	height:70%;
+	display: inline-block;
+	margin:2%;
+	margin-left:5%;
+	vertical-align: top;
+}
+.div_gameItemInfo{
+	display: inline-block;
+	/*float:right;*/
+	/*margin-right:15px;*/
+	width: 30%;
+	/*margin-right: 3%;*/
+	height:100%;
+	z-index: 50;
+
+}
+/*#p_nameItem{
+	color:black;
+	font-size:18px;
+	height:33%;
+	width:100%;
+	overflow: auto;
+	overflow-x: scroll;
+	overflow-y: hidden; /*only scrolls horizontally
+} */
+.p_ruleLabel{
+	background-color: none;
+	text-align: center;
+	z-index: 50;
+}
+#p_gameVal, #p_gameWin, #p_gameChance{
+	font-size: 20px;
+	background-color: none;
+	text-align: center;
+	z-index: 50;
+}
+/*#p_valueItem, #p_ruleItem{
+	display: inline-block;
+	width:65%;
+	z-index: 50;
+}*/
+
+#img_gameBackground{
+	display: absolute;
+	height: 300px;
+	width: 280px;
+	margin-left: 5px;
+	margin-top: -10px;
+	z-index: -50;
+}
+
+#div_gameBottom{
+	height:75%;
+	/*background-color: #1A1A1A;*/
+}
+#div_playerInfo{
+	height:10%;
+}
+
+#div_playerNameLeft{
+	background-color: gray;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	width: 35%;
+	display: inline-block;
+}
+#div_playerNameRight{
+	background-color: gray;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	width: 35%;
+	display: inline-block;
+	float:right;
+}
+#p_userWin, #p_vendorWin{
+	display:inline-block;
+	color:white;
+}
+.p_playerName{
+	width:50%;
+	color:black;
+	overflow: auto;
+	display: inline-block;
+	text-align: center;
+	margin-top:3%;
+	vertical-align: middle;
+	/*padding-right:5%;*/
+}
+.img_playerIcon{
+	width:30%;
+	height:80%;
+	display: inline-block;
+}
+#img_vs{
+	width:10%;
+	height:70%;
+	margin-right: 7%;
+	margin-left: 7%;
+}
+
+
+#div_gamePlay{
+	height:70%;
+}
+#img_RPCTop, #img_RPCBottom{
+	height:40%;
+	width:40%;
+	margin-right: 30%;
+	margin-left: 30%;
+}
+#img_RPCTop{
+	-webkit-transform:rotate(180deg);
+}
+#p_countdown{
+	background-color: red;
+	color: white;
+	margin:2%;
+	height: 15%;
+	width: 50%;
+	/*font-size: 100%;*/
+	font-size: 25px;
+	text-align: center;
+	margin-left: 25%;
+	margin-right:25%;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+
+#div_RPCChoices{
+	height:20%;
+}
+#ul_RPCChoices{
+	list-style-type: none;
+	padding: 0px;
+	height:100%;
+}
+#ul_RPCChoices li{
+	display: inline-block;
+	width:30%;
+	height:100%;
+	margin-left: 2%;
+	cursor: pointer;
+}
+#ul_RPCChoices img:hover{
+	border:solid 2px #F6F792;
+}
+#ul_RPCChoices img{
+	width:90%;
+	height:80%;
+	border-radius: 50%;
+	background-color: #DAEDE2;
+	margin-left: 5%;
+	/*display: inline;*/
+
+}
+.p_RPCLabel{
+/*	width:30%;*/
+	text-align: center;
+
+}
+
+
+/*//////////  select functions ///////////*/
+.div_selection{
+	width:120px;
+	height:40px;
+}
+
+#div_all, #div_range, #div_bidline, #div_bidbox, #div_detail{
+	width:25px;
+	height:40px;
+}
+
+

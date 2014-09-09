@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>game</title>
+		<link href="bootstrap-3.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
+	    <link rel="stylesheet" type="text/css" media="screen" href="noSearch.css" />
+
+	    <meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	    <script type="text/javascript" src="jquery-ui-1.10.4/js/jquery-1.10.2.js"></script>
+	    <script type="text/javascript" src="jquery-ui-1.10.4/js/jquery-ui-1.10.4.js"></script>
+	    <script type="text/javascript" src="game.js"></script>
+	    <script src="bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
+	    <script type="text/javascript" src="purchase_db.js"></script>
+	    
+	</head>
+
+	<body>
+		<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			        </button>
+			        
+			        <div id="nav_label" class="navbar-brand">Play Game</div>
+
+<!-- 			        <div id="div_search">
+						<input id="input_search" type="text" placeholder=" &#x26B2 Search" />
+					</div> -->
+				
+			    </div>
+			    <div class="collapse navbar-collapse" style="height: auto;">
+			        <ul class="nav navbar-nav">
+			            <li class=""><a href="profile.html">My Account</a></li>
+			            <li class=""><a href="purchased.html">Purchased</a></li>
+			            <li><a href="">How it works</a></li>
+			            <li><a href="">Settings</a></li>
+			            <li><a href="">Merchant Registration</a></li>
+			            <li><a href="">Terms and Conditions</a></li>
+			            <li><a href="">Log Out</a></li>
+			        </ul>
+			    </div><!--/.nav-collapse -->
+			</div>
+		</div>
+
+
+		<div class="container">
+			<div class="mainFrame">
+				<div id="div_mainFrameCover"></div>
+				<div id="div_gameTop">
+					<img id="img_topflag" src="rpspagedesigns/pages/RPS_V4-23.png" />
+					<div id="div_nowPlayingFor">
+						<p id="p_playingFor"> </p>
+						<p id="p_timeleft">3d 14hr 5m left</p>
+					</div>
+					<div id="div_gameItem">
+						<div class="div_gameItemInfo">
+							<p class="p_ruleLabel">Value</p>
+							<p id="p_gameVal"></p>
+						</div>
+						<div class="div_gameItemInfo">
+							<p class="p_ruleLabel">Win</p>
+							<p id="p_gameWin"></p>
+						</div>
+						<div class="div_gameItemInfo">
+							<p class="p_ruleLabel">Chance</p>
+							<p id="p_gameChance"></p>
+						</div>
+					</div>
+				</div>
+				
+					<!-- <p id="p_winner"></p> -->
+				<div id="div_popUp">
+					<a href="purchased.html">
+						<p id="p_popUp">bla</p>
+						<p id="p_popUp2">bla</p>
+					</a>
+					<!-- <a href="purchased.html" id="p_returnToPurch">Return To Purchase</a> -->
+				</div>
+
+				<div id="div_gameBackground">
+					<div id="div_gameBackground1">
+						<!-- <img id="img_gameBackground" src="rpspagedesigns/pages/RPS_V4-22_2.png" /> -->
+						<div id="div_playerInfo">
+						<div id="div_playerNameLeft">
+							<img id="img_gameBackground" src="icons/yellowTagLeft_o.png" />
+							<p id="p_vendorWin">0</p>
+							<p  id="p_vendor" class="p_playerNameLeft"> </p>
+						</div>
+						<p id="p_round"> ROUND 1</p>
+						<div id="div_playerNameRight">
+							<img id="img_gameBackground" src="icons/yellowTagRight_o.png" />
+							<p class="p_playerNameRight">Michelle</p>
+							<p id="p_userWin">0</p>
+						</div>
+						</div>
+						<div id="div_gamePlay">
+							<img id="img_RPCLeft" src="icons/game_leftHand.png"/>
+							<img id="img_RPCRight" src="icons/RPS_rock.png"/>
+						</div>
+					</div>
+					
+					<p id="p_countdown"> START </p>
+
+					<div id="div_RPCChoices">
+						<ul id="ul_RPCChoices">
+							<li>
+								<img id="img_rock" src="icons/Rock2.png" />
+							</li>
+							<li>
+								<img id="img_paper" src="icons/Paper2.png" />
+							</li>
+							<li>
+								<img id="img_scissors" src="icons/Scissors2.png" />
+							</li>
+						</ul>
+					</div>
+				</div>
+			
+			</div>
+
+			<div class="div_rollUp1">
+				<div class="div_rollUp2">
+					<p> &#9652 </p>
+				</div>
+
+				<table class="table_nav">
+					<tr>
+						<td>
+							<a href="purchased.html">
+								<img class="img_nav" src="icons/purchase.png"/>
+								<p class="p_navLabel">Purchases</p>
+							</a>
+						</td>
+						<td>
+							<a href="nearby.html">
+								<img class="img_nav" src="icons/nearby.png" />
+								<p class="p_navLabel">Nearby</p>
+							</a>
+						</td>
+						<td>
+							<a href="wishList.html">
+							<img class="img_nav" src="icons/wishList.png"/>
+							<p class="p_navLabel">Wish List</p>
+							</a>
+						</td>
+						<td>
+							<a href="profile.html">
+							<img class="img_nav" src="icons/myProfile.png"/>
+							<p class="p_navLabel">My Profile</p>
+							</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+	</body>
+</html>

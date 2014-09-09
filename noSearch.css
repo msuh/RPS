@@ -1,0 +1,557 @@
+/********* Bootstrap ************/
+body{
+	font-family: Helvetica Neue UltraLight, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  	/*padding-bottom: 65px;*/
+  	padding-top: 55px;
+  	color:black;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 1px;
+}
+p{
+	margin:0px;
+}
+
+.navbar-header {
+	/*background-color: #E04E5F;*/
+	background-color: #384759;
+}
+
+.navbar .navbar-brand{
+	color:  #f7f6f5;
+	/*height: 55px;*/
+	font-size: 35px;
+	padding: 15px;
+}
+#nav_label{
+	font-size:20px;
+	margin-left: 30px;
+}
+.navbar .navbar-toggle .icon-bar {
+	background-color:  #f7f6f5;
+}
+.navbar-toggle{
+	float:left;
+	margin-left:10px;
+}
+
+#nav_label:hover {
+	color: #f7f6f5;
+}
+.filler{
+	padding-top:5%;
+}
+.filler2{
+	padding-top:20%;
+}
+a{
+	color:inherit;
+	cursor: pointer;
+}
+a:visited{
+	color:inherit;
+}
+a:hover{
+	text-decoration: none;
+	color:#77C4D3;
+}
+a:active{
+	text-decoration: none;
+	color: #333745;
+}
+/*//////////////////////////////////*/
+
+.mainFrame{
+	width:90%;
+	height:500px;
+	position: absolute;
+}
+
+
+/*///////////// purchased //////////////////*/
+.pageName{
+	text-align: center;
+}
+#div_search{
+	height:10%;
+	background-color: gray;
+	padding-bottom: 5px;
+}
+#p_search{
+	margin-left:3%;
+	height:30%;
+	font-size: 90%;
+}
+#input_search{
+	height:55%;
+	border-radius: 5px;
+	text-align: center;
+	margin-left: 5%;
+	width: 90%;
+	box-shadow: none;
+	border:0px;
+	margin-top:5px;
+	font-size: 120%;
+}
+#ol_purchase{
+	list-style-type: none;
+	width:100%;
+	height:90%;
+	overflow: scroll;
+	padding:0px;
+}
+.li_element{
+	height: 17%;
+}
+#ol_purchase li:nth-child(even){
+	background-color: gray;
+}
+.img_purchaseItem{
+	width:22%;
+	height:85%;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 2%;
+	margin-left:2%;
+}
+.div_itemInfo{
+	width:55%;
+	height:80%;
+	display: inline-block;
+	margin-top: 2%;
+}
+.p_itemName{
+	margin-left: 5px;
+	height:30%;
+	width:90%;
+	font-size: 110%;
+/*	overflow-x:scroll;
+	overflow-y:hidden;*/
+}
+#input_playButton{
+	background-color: red;
+	vertical-align: top;
+	margin-top: 8%;
+	color:white;
+	box-shadow: none;
+	border-radius: 2px;
+	border:0px;
+	width:18%;
+	/*width:10%;*/
+}
+
+
+ /*/////////////  game ///////////////*/
+#div_round{
+	display:none;
+	width:40%;
+	height:10%;
+	margin-left: 25%;
+	background-color: red;
+	color:white;
+	position: absolute;
+	font-size: 140%;
+	text-align: center;
+	z-index: 10;
+}
+#p_winner{
+	display:none;
+	width:60%;
+	height:40%;
+	margin-left: 15%;
+	margin-top:15%;
+	background-color: white;
+	color:green;
+	border:solid 1px black;
+	border-radius: 4px;
+	position: absolute;
+	font-size: 140%;
+	text-align: center;
+	padding-top: 30%;
+	z-index: 20;
+}
+#img_topflag{
+	height:100px;
+	width: 290px;
+	position: absolute;
+	z-index: -10;
+	/*margin-left: -30px;*/
+	/*margin-top: -20px;*/
+}
+#div_gameTop{
+	height:20%;
+	background-color: none;
+}
+
+#div_nowPlayingFor{
+	height:45%;
+	background-color: none;
+	/*margin-top: 5px;*/
+}
+#p_playingFor{
+	display: block;
+	text-align: center;
+	background-color: none;
+	padding-top: 5px;
+}
+#p_timeleft{
+	display: block;
+	text-align: center;
+	background-color: none;
+	color: #1C75BC;
+	font-size: 12px;
+}
+
+#div_gameItem{
+	height:45%;
+	padding-top:5px;
+}
+#img_gameItem{
+	width:25%;
+	height:70%;
+	display: inline-block;
+	margin:2%;
+	margin-left:5%;
+	vertical-align: top;
+}
+.div_gameItemInfo{
+	display: inline-block;
+	width: 30%;
+	margin-left:4px;
+	margin-top: 3px;
+	height:100%;
+	z-index: 50;
+
+}
+/*#p_nameItem{
+	color:black;
+	font-size:18px;
+	height:33%;
+	width:100%;
+	overflow: auto;
+	overflow-x: scroll;
+	overflow-y: hidden; /*only scrolls horizontally
+} */
+.p_ruleLabel{
+	background-color: none;
+	text-align: center;
+	z-index: 50;
+	font-size: 11px;
+}
+
+#p_gameVal, #p_gameWin, #p_gameChance{
+	font-size: 20px;
+	background-color: none;
+	text-align: center;
+	z-index: 50;
+	font-weight: bold;
+}
+#p_gameWin{
+	margin-top:1px;
+	font-size: 19px;
+}
+/*#p_valueItem, #p_ruleItem{
+	display: inline-block;
+	width:65%;
+	z-index: 50;
+}*/
+#div_gameBackground{
+	height:75%;
+}
+#div_gameBackground1{
+	background-image:url('rpspagedesigns/pages/RPS_V4-22_2.png');
+	height: 250px;
+	width: 285px;
+	z-index: -50;
+	border-radius: 15px;
+}
+#img_gameBackground{
+	position: absolute;
+	height: 35px;
+	width: 100px;
+	/*margin-left: 5px;*/
+	/*margin-top: -10px;*/
+	background-color: none;
+}
+
+
+#div_gameBottom{
+	height:75%;
+	display: relative;
+	/*background-color: #1A1A1A;*/
+}
+#div_playerInfo{
+	height:20%;
+	display: relative;
+	padding-top:10%;
+}
+
+#div_playerNameLeft{
+	background-color: none;
+	height:40px;
+	width:100px;
+	display: inline-block;
+	top:-10px;
+}
+#p_round{
+	display: inline-block;
+	width:70px;
+	vertical-align: top;
+	text-align: center;
+	margin-top:5px;
+	color:white;
+	font-size: 15px;
+}
+#div_playerNameRight{
+	background-color: none;
+	display: inline-block;
+	float:right;
+	height:40px;
+	width:100px;
+	top:-10px;
+
+}
+#p_userWin, #p_vendorWin{
+	display:inline-block;
+	color:white;
+	background-color: none;
+	position: absolute;
+	width: 20px;
+	margin-top: 2%;
+	margin-left: 10px;
+	text-align: center;
+}
+#p_userWin{
+	margin-left: 70px;
+	text-align: center;
+}
+.p_playerNameLeft, .p_playerNameRight {
+	width:60px;
+	color:black;
+	overflow: scroll;
+	display: inline-block;
+	text-align: center;
+	margin-top:2%;
+	vertical-align: middle;
+	background-color: none;
+	position: absolute;
+	margin-left: 30px;
+	color:#1C75BC;
+	font-size: 15px;
+	/*padding-right:5%;*/
+}
+.p_playerNameRight {
+	margin-left: 7px;
+	margin-right: 20px;
+
+}
+.img_playerIcon{
+	width:30%;
+	height:80%;
+	display: inline-block;
+	background-color: none;
+	display: absolute;
+}
+#img_vs{
+	width:10%;
+	height:70%;
+	margin-right: 7%;
+	margin-left: 7%;
+}
+
+
+#div_gamePlay{
+	height:200px;
+	display: relative;
+}
+#img_RPCLeft, #img_RPCRight{
+	display: inline-block;
+	height:130px;
+	width:100px;
+	padding-bottom: 2%;
+	margin-top: 5%;
+	background-color: none;
+	/*margin-bottom: 30%;*/
+	float: right;
+	-webkit-transform:rotate(270deg);
+}
+#img_RPCLeft{
+	-webkit-transform:rotate(90deg);
+	float: left;
+	/*margin-left: 10%;*/
+	margin-top:13%;
+	-webkit-animation:mymove 1s infinite;
+}
+@-webkit-keyframes mymove{
+from {top:100px;}
+to {top:200px;}
+}
+#p_countdown{
+	background-color: #384759;
+	color: white;
+	margin:1%;
+	margin-top:3%;
+	margin-bottom:4%;
+	height: 10%;
+	width: 97.5%;
+	/*font-size: 100%;*/
+	font-size: 25px;
+	text-align: center;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+
+#div_RPCChoices{
+	height:20%;
+}
+#ul_RPCChoices{
+	list-style-type: none;
+	padding: 0px;
+	height:100%;
+}
+#ul_RPCChoices li{
+	display: inline-block;
+	width:30%;
+	height:100%;
+	margin-left: 4px;
+	cursor: pointer;
+}
+#ul_RPCChoices img:hover{
+	/*border:solid 2px #F6F792;*/
+	background-color: #919191;
+	opacity: .7;
+}
+#ul_RPCChoices img{
+	width:100%;
+	height:105%;
+	background-color: none;
+	margin-left: 4%;
+	/*display: inline;*/
+
+}
+.p_RPCLabel{
+/*	width:30%;*/
+	text-align: center;
+
+}
+
+
+
+#p_gameVal, #p_gameChance, #p_gameChance{
+
+}
+
+/*//////////// animation ///////////*/
+@-webkit-keyframes mynewmove /*Safari and Chrome*/
+{
+from {top:100px;}
+to {top:210px;}
+}
+
+#div_mainFrameCover{
+	background-color: black;
+	opacity: .8;
+	z-index: 99;
+	width:95%;
+	height:45%;
+	position: absolute;
+	display:none;
+	margin-top: 38%;
+	border-radius: 5px;
+	margin-left: 2.5%;
+}
+#div_popUp{
+	position: absolute;
+	z-index: 100;
+	display:none;
+	/*background-color: #384759;*/
+	background-color: inherit;
+	color:white;
+	text-align: center;
+	width:100%;
+	margin-top: 33%;
+}
+#p_popUp, #p_popUp2{
+	/*margin-bottom:20px;*/
+	color:yellow;
+	font-size: 25px;
+}
+#p_popUp2{
+	font-size:17px;
+}
+#p_returnToPurch{
+	color:white;
+	text-decoration: none;
+	font:12px;
+	margin-top: 15px;
+	width: 100px;
+	display: none;
+	
+}
+#p_returnToPurch:hover{
+	opacity: .54;
+	color:#bdbdbd;
+}
+
+/*////////// rollup//////////*/
+.div_rollUp1{
+	width:90%;
+	position: absolute;
+	bottom:-63px;
+
+}
+.div_rollUp2{
+	background-color: #D3D3D3;
+	width:100%;
+	cursor:pointer;
+	/*margin-top: 20px;*/
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.div_rollUp2 p{
+	width: 100%;
+	text-align: center;
+}
+.table_nav{
+	background-color: white;
+	height:0px;
+	/*opacity: .3;*/
+}
+.table_nav td{
+	width: 20%;
+	/*padding-top: 2%;*/
+}
+.img_nav{
+	width:50px;
+	height:45px;
+	margin-left: 10px;
+	/*padding:2%;*/
+}
+.p_navLabel{
+	text-align: center;
+	margin:0px;
+	margin-bottom:2px;
+	font-size: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

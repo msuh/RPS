@@ -1,0 +1,17 @@
+body{
+	font-family: Helvetica Neue UltraLight, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+}
+
+
+
+#img_index{
+	width:304px;
+	height:550px;
+}
+#div_login{
+	position: absolute;
+	/*background-color: none;*/
+	width:304px;
+	height:550px;
+}
