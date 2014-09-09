@@ -156,7 +156,7 @@ a:active{
 	/*font-family: Helvetica Neue Bold, "HelveticaNeue Bold", "Helvetica Neue Bold";*/
 	font-weight: bold;
 	height: 22px;
-	overflow: scroll;
+	text-overflow: ellipsis;
 
 }
 .p_vendor{
