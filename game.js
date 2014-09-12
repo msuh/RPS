@@ -221,6 +221,9 @@ var RPC_Game = function(id, start_count, rule, price){
 		console.log("entered countdown");
 		this.generate();
 		animation();
+	    rpsSound();
+
+
 		//set COUNTDOWN to true
 		COUNTDOWN = true;
 		var id = this.id,
@@ -266,7 +269,7 @@ var RPC_Game = function(id, start_count, rule, price){
 		        // //set userPlay to whatever happened from timeout
 		        // userPlay = userPlay;
 		    }
-		}, 1000);
+		}, 650);
 	}
 
 	//timeout is called within countdown's setInterval method which
@@ -381,29 +384,50 @@ function ruleListIntoStr(list){
 // }
 
 function animation(){
-     var count = 3;
+     var count = 3, dur = 270;
      var interval = setInterval(function() {
 		    count--;
 		     $('#img_RPCLeft').animate({
-		     	marginLeft:"+=10px",
-		     	marginTop:"+=10px"
+		     	marginLeft:"+=8px",
+		     	marginTop:"+=8px"
+		     },{
+		     	duration: dur
 		     });
 		     $('#img_RPCLeft').animate({
-		     	marginLeft:"-=10px",
-		     	marginTop:"-=10px"
+		     	marginLeft:"-=8px",
+		     	marginTop:"-=8px"
+		     },{
+		     	duration: dur
 		     });
 		     $('#img_RPCRight').animate({
-		     	marginLeft:"+=10px",
-		     	marginTop:"+=10px"
+		     	marginLeft:"+=8px",
+		     	marginTop:"+=8px"
+		     },{
+		     	duration: dur
 		     });
 		     $('#img_RPCRight').animate({
-		     	marginLeft:"-=10px",
-		     	marginTop:"-=10px"
+		     	marginLeft:"-=8px",
+		     	marginTop:"-=8px"
+		     },{
+		     	duration: dur
 		     });
-		    if (count == 0) {
+		    if (count <= 0) {
 		        clearInterval(interval);
 		    }
 
-		}, 800);
-    
+		}, 500);
 }
+
+
+function rpsSound(){
+	$("body").append('<audio src="sound/RockPaperScissorsShoot_02.wav" autoplay ></audio>');
+}
+
+
+
+
+
+
+
+
+
